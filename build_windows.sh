@@ -38,8 +38,8 @@ cmake .. -G "$GENERATOR" \
          -DCMAKE_FIND_ROOT_PATH_MODE_PACKAGE=ONLY \
          -DSDL2_FOUND=TRUE \
          -DSDL2_INCLUDE_DIRS="$SDL2_ROOT/include/SDL2" \
-         -DSDL2_LIBRARIES="$SDL2_ROOT/lib/libSDL2main.a;$SDL2_ROOT/lib/libSDL2.dll.a;-lmingw32" \
-         -DCMAKE_EXE_LINKER_FLAGS="-mconsole" \
+         -DSDL2_LIBRARIES="-lmingw32;$SDL2_ROOT/lib/libSDL2main.a;$SDL2_ROOT/lib/libSDL2.dll.a" \
+         -DCMAKE_EXE_LINKER_FLAGS="-Wl,-subsystem,console -Wl,-e,mainCRTStartup" \
          -DCMAKE_BUILD_TYPE="$BUILD_TYPE" \
          -DPSX_RECOMP_UI="$UI"
 
@@ -51,4 +51,4 @@ cd ..
 # Copiar la DLL junto al ejecutable
 cp "$SDL2_ROOT/bin/SDL2.dll" "$BUILD_DIR/"
 
-echo "✅ ¡POR FIN! Binario generado en: $BUILD_DIR/Crash_Bandicoot_Recompiled.exe"
+echo "✅ ¡Punto de victoria! Binario listo en: $BUILD_DIR/Crash_Bandicoot_Recompiled.exe"

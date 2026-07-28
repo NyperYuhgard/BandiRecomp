@@ -25,3 +25,7 @@ bios_hle = false
 
 [video]
 renderer = "opengl"
+supersampling     = 1
+frame_interpolation = true
+frame_interpolation_fps = 60
+aspect_ratio      = "16:9"
