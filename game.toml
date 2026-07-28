@@ -4,6 +4,7 @@
 [game]
 name = "Crash Bandicoot"
 id = "SCUS-94900"
+disc = "disc/CB.cue"
 exe = "BandiRecomp/SCUS_949.00"
 load_address = "0x80010000"
 entry_pc = "0x8003E018"
@@ -18,6 +19,7 @@ out_dir = "generated"
 [runtime]
 openbios = true
 # debug_port = 4370
+fast_boot = true
 window_title = "Crash Bandicoot Recompiled"
 bios_hle = false
 

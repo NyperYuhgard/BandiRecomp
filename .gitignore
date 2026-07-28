@@ -2,3 +2,5 @@
 /build/
 /psxrecomp/
 psxrecomp
+/build-windows/
+/build-linux/
