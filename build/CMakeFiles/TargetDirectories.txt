@@ -1,0 +1,5 @@
+/media/nyper/FuckYouMS/Github/PSXRecompsProyects/BandiRecomp/build/CMakeFiles/psx-runtime.dir
+/media/nyper/FuckYouMS/Github/PSXRecompsProyects/BandiRecomp/build/CMakeFiles/psxrecomp_codegen_hash.dir
+/media/nyper/FuckYouMS/Github/PSXRecompsProyects/BandiRecomp/build/CMakeFiles/psx-runtime_require_generated.dir
+/media/nyper/FuckYouMS/Github/PSXRecompsProyects/BandiRecomp/build/CMakeFiles/edit_cache.dir
+/media/nyper/FuckYouMS/Github/PSXRecompsProyects/BandiRecomp/build/CMakeFiles/rebuild_cache.dir
