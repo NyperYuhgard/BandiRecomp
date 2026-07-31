@@ -1,5 +1,7 @@
 /BandiRecomp/
 /build/
+/build-win/
+/build-zlib/
 /psxrecomp/
 psxrecomp
 /build-windows/
