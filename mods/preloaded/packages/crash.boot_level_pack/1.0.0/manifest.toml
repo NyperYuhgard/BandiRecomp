@@ -1,0 +1,285 @@
+format_version = 5
+id = "crash.boot_level_pack"
+version = "1.0.0"
+name = "Crash Bandicoot Boot in Level"
+author = "Nyper"
+description = "Arranca el juego directamente en el nivel elegido por ID, escribiendo el byte de nivel (0x80011DB0) durante el estado de boot (código GameShark D0011DB2 3404)."
+license = "MIT"
+resolver = "declarative"
+
+[[target]]
+game_id = "SCUS-94900" # Pon aquí el ID de tu ISO de Crash (ej. SCUS-94154 / SLES-00039)
+
+[[feature]]
+id = "boot-level"
+name = "Boot in Level"
+description = "Elige el nivel de arranque. Es un código de boot: se activa al arrancar el juego, no a mitad de partida."
+default_enabled = false
+
+[[option]]
+feature = "boot-level"
+id = "level"
+label = "Nivel"
+description = "Nivel en el que arrancar el juego (byte de nivel 0x80011DB0)."
+type = "choice"
+default = "0x22"
+
+[[option.choice]]
+value = "0x00"
+label = "0x00 — (none)"
+
+[[option.choice]]
+value = "0x01"
+label = "0x01 — (none)"
+
+[[option.choice]]
+value = "0x02"
+label = "0x02 — (none)"
+
+[[option.choice]]
+value = "0x03"
+label = "0x03 — Cortex Power"
+
+[[option.choice]]
+value = "0x04"
+label = "0x04 — Cavern Level (unused)"
+
+[[option.choice]]
+value = "0x05"
+label = "0x05 — Generator Room"
+
+[[option.choice]]
+value = "0x06"
+label = "0x06 — Heavy Machinery"
+
+[[option.choice]]
+value = "0x07"
+label = "0x07 — Toxic Waste"
+
+[[option.choice]]
+value = "0x08"
+label = "0x08 — Pinstripe (Boss 4)"
+
+[[option.choice]]
+value = "0x09"
+label = "0x09 — N. Sanity Beach"
+
+[[option.choice]]
+value = "0x0A"
+label = "0x0A — Papu Papu (Boss 1)"
+
+[[option.choice]]
+value = "0x0B"
+label = "0x0B — (none)"
+
+[[option.choice]]
+value = "0x0C"
+label = "0x0C — Jungle Rollers"
+
+[[option.choice]]
+value = "0x0D"
+label = "0x0D — (none)"
+
+[[option.choice]]
+value = "0x0E"
+label = "0x0E — Boulders"
+
+[[option.choice]]
+value = "0x0F"
+label = "0x0F — Upstream"
+
+[[option.choice]]
+value = "0x10"
+label = "0x10 — (none)"
+
+[[option.choice]]
+value = "0x11"
+label = "0x11 — Hog Wild"
+
+[[option.choice]]
+value = "0x12"
+label = "0x12 — The Great Gate"
+
+[[option.choice]]
+value = "0x13"
+label = "0x13 — Boulder Dash"
+
+[[option.choice]]
+value = "0x14"
+label = "0x14 — Road to Nowhere"
+
+[[option.choice]]
+value = "0x15"
+label = "0x15 — Rolling Stones"
+
+[[option.choice]]
+value = "0x16"
+label = "0x16 — The High Road"
+
+[[option.choice]]
+value = "0x17"
+label = "0x17 — Ripper Roo (Boss 2)"
+
+[[option.choice]]
+value = "0x18"
+label = "0x18 — Up The Creek"
+
+[[option.choice]]
+value = "0x19"
+label = "0x19 — Map, Main Menu, Title Sequence"
+
+[[option.choice]]
+value = "0x1A"
+label = "0x1A — Native Fortress"
+
+[[option.choice]]
+value = "0x1B"
+label = "0x1B — Nitrus Brio (Boss 5)"
+
+[[option.choice]]
+value = "0x1C"
+label = "0x1C — Temple Ruins"
+
+[[option.choice]]
+value = "0x1D"
+label = "0x1D — Jaws of Darkness"
+
+[[option.choice]]
+value = "0x1E"
+label = "0x1E — Whole Hog"
+
+[[option.choice]]
+value = "0x1F"
+label = "0x1F — Dr. Neo Cortex (Boss 6)"
+
+[[option.choice]]
+value = "0x20"
+label = "0x20 — The Lost City"
+
+[[option.choice]]
+value = "0x21"
+label = "0x21 — Koala Kong (Boss 3)"
+
+[[option.choice]]
+value = "0x22"
+label = "0x22 — Stormy Ascent (unused)"
+
+[[option.choice]]
+value = "0x23"
+label = "0x23 — Sunset Vista"
+
+[[option.choice]]
+value = "0x24"
+label = "0x24 — Bonus Round (Tawna - short version)"
+
+[[option.choice]]
+value = "0x25"
+label = "0x25 — Bonus Round (Nitrus Brio)"
+
+[[option.choice]]
+value = "0x26"
+label = "0x26 — Bonus Round (currently unknown)"
+
+[[option.choice]]
+value = "0x27"
+label = "0x27 — (none)"
+
+[[option.choice]]
+value = "0x28"
+label = "0x28 — Lights Out"
+
+[[option.choice]]
+value = "0x29"
+label = "0x29 — The Lab"
+
+[[option.choice]]
+value = "0x2A"
+label = "0x2A — Fumbling in the Dark"
+
+[[option.choice]]
+value = "0x2B"
+label = "0x2B — (none)"
+
+[[option.choice]]
+value = "0x2C"
+label = "0x2C — The Great Hall"
+
+[[option.choice]]
+value = "0x2D"
+label = "0x2D — Level Completion Screen"
+
+[[option.choice]]
+value = "0x2E"
+label = "0x2E — Slippery Climb"
+
+[[option.choice]]
+value = "0x2F"
+label = "0x2F — (none)"
+
+[[option.choice]]
+value = "0x30"
+label = "0x30 — (none)"
+
+[[option.choice]]
+value = "0x31"
+label = "0x31 — (none)"
+
+[[option.choice]]
+value = "0x32"
+label = "0x32 — (none)"
+
+[[option.choice]]
+value = "0x33"
+label = "0x33 — (none)"
+
+[[option.choice]]
+value = "0x34"
+label = "0x34 — Bonus Round (Tawna - long version)"
+
+[[option.choice]]
+value = "0x35"
+label = "0x35 — Bonus Round (Dr. Neo Cortex)"
+
+[[option.choice]]
+value = "0x36"
+label = "0x36 — (none)"
+
+[[option.choice]]
+value = "0x37"
+label = "0x37 — (none)"
+
+[[option.choice]]
+value = "0x38"
+label = "0x38 — Castle Machinery"
+
+[[option.choice]]
+value = "0x39"
+label = "0x39 — Intro"
+
+[[option.choice]]
+value = "0x3A"
+label = "0x3A — Ending"
+
+[[option.choice]]
+value = "0x3B"
+label = "0x3B — (none)"
+
+[[option.choice]]
+value = "0x3C"
+label = "0x3C — (none)"
+
+[[option.choice]]
+value = "0x3D"
+label = "0x3D — (none)"
+
+[[option.choice]]
+value = "0x3E"
+label = "0x3E — (none)"
+
+[[option.choice]]
+value = "0x3F"
+label = "0x3F — (none)"
+
+[[plugin]]
+feature = "boot-level"
+id = "crash.boot-level"

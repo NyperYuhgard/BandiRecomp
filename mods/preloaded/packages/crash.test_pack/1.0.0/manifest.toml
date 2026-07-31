@@ -18,4 +18,4 @@ default_enabled = true
 
 [[plugin]]
 feature = "widescreen_feature"
-id = "crash.test_widescreen"
+id = "example.quick-start"

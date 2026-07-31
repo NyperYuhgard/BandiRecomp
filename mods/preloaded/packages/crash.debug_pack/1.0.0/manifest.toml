@@ -1,0 +1,21 @@
+format_version = 5
+id = "crash.debug_pack"
+version = "1.0.0"
+name = "Crash Bandicoot Debug Mode"
+author = "Nyper"
+description = "Replica el código GameShark 8006199C 0100: mantiene activado el modo debug escribiendo 0x01 en 0x8006199C en cada VBlank."
+license = "MIT"
+resolver = "declarative"
+
+[[target]]
+game_id = "SCUS-94900" # Pon aquí el ID de tu ISO de Crash (ej. SCUS-94154 / SLES-00039)
+
+[[feature]]
+id = "debug"
+name = "Modo Debug"
+description = "Activa el modo debug de Crash Bandicoot 1 (código GameShark 8006199C 0100)."
+default_enabled = false
+
+[[plugin]]
+feature = "debug"
+id = "crash.debug"

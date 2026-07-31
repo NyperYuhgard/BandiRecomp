@@ -1,18 +1,11 @@
 #include "mod_plugins.h"
-#include <stdio.h>
 
-/* Callback que se ejecuta antes de abrir la ventana de juego */
-static void crash_test_activation(void) {
-    printf("[CrashMod] ¡Hola desde el plugin nativo de Crash!\n");
-
-    // Probamos forzar relación de aspecto 16:9 widescreen
-    psx_mod_set_fixed_display_aspect(16, 9);
-
-    // O si quieres probar desbloquear VBlank a 120 FPS de prueba:
-    // psx_mod_set_native_vblank_rate(120);
+static void example_vblank(void) {
+    if (psx_mod_game_started())
+        psx_mod_write_byte(0x1F8001B4u, 1u);
 }
 
-/* Usamos la macro con constructor estático para auto-registrar el plugin al iniciar */
-PSX_MOD_CONSTRUCTOR(register_crash_test_mod) {
-    psx_mod_register_activation_plugin("crash.test_widescreen", crash_test_activation);
+PSX_MOD_CONSTRUCTOR(register_example_mod) {
+    (void)psx_mod_register_vblank_plugin(
+        "example.quick-start", example_vblank);
 }
