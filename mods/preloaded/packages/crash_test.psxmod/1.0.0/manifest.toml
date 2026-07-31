@@ -1,0 +1,21 @@
+format_version = 5
+id = "crash.test_pack"
+version = "1.0.0"
+name = "Crash Test Plugin"
+author = "Nyper"
+description = "Mod de prueba para verificar la API de plugins nativos."
+license = "MIT"
+resolver = "declarative"
+
+[[target]]
+game_id = "SCUS-94900" # Pon aquí el ID de tu ISO de Crash (ej. SCUS-94154 / SLES-00039)
+
+[[feature]]
+id = "widescreen_feature"
+name = "Forzar Widescreen 16:9"
+description = "Activa el callback de C para cambiar la relación de aspecto."
+default_enabled = true
+
+[[plugin]]
+feature = "widescreen_feature"
+id = "crash.test_widescreen"

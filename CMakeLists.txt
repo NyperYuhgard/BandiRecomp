@@ -45,7 +45,7 @@ psxrecomp_add_runtime_target(psx-runtime
     WINDOW_TITLE "Crash Bandicoot Recompiled"
     DEFAULT_BIOS_PATH "${PSXRECOMP_ROOT}/bios/openbios.bin"
     DEFAULT_GAME_CONFIG_PATH "game.toml"
-#    LAUNCHER_BOXART "${CMAKE_SOURCE_DIR}/recomp/launcher/boxart.tga"
+    LAUNCHER_BOXART "${CMAKE_SOURCE_DIR}/recomp/launcher/boxart.tga"
 )
 
 # Preload the game-owned catalog. Features remain disabled until selected in
